@@ -1,0 +1,14 @@
+{
+  "preprocess": {
+    "contrast": 0.15732433662015285,
+    "noise_mad_lap": 3.0,
+    "ink_density": 0.25710025027808675
+  },
+  "aligned": {
+    "contrast": 0.07037764562259696,
+    "noise_mad_lap": 1.0,
+    "ink_density": 0.07185740007955949
+  },
+  "warp_branch": "lab_mask",
+  "radon_angle_deg": -3.0
+}

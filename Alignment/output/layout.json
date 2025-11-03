@@ -1,0 +1,29 @@
+{
+  "image_size": [
+    549,
+    696
+  ],
+  "aligned_image": "aligned.png",
+  "rows": [
+    {
+      "id": "q1",
+      "bbox": [
+        0,
+        139,
+        549,
+        459
+      ],
+      "answer_box_bbox": [
+        389,
+        342,
+        25,
+        22
+      ],
+      "type": "mcq",
+      "confidence": 0.86,
+      "row_image": "rows/q1.png",
+      "answer_image": "rows/q1_answer.png"
+    }
+  ],
+  "notes": "bboxes are [x,y,w,h] on aligned.png; paths are relative."
+}
