@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Node (frontend)
+node_modules/
+dist/
+build/
+
+# Model outputs or checkpoints
+*.pt
+*.bin
+*.h5
+*.ckpt
+*.onnx

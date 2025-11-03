@@ -1,0 +1,140 @@
+[
+  {
+    "question_id": "q1",
+    "question": "What is the law of demand in economics?",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Concept correctness",
+        "weight": 0.6,
+        "description": "States the correct concept, definitions"
+      },
+      {
+        "criterion": "Examples",
+        "weight": 0.2,
+        "description": "Gives a relevant example"
+      },
+      {
+        "criterion": "Clarity & coherence",
+        "weight": 0.2,
+        "description": "Answer is structured and concise"
+      }
+    ],
+    "answer": "The law of demand states that, all else being equal, as the price of a good increases, the quantity demanded decreases. This inverse relationship reflects consumer behavior where higher prices typically reduce purchasing decisions. Example: If the price of a coffee cup rises from $3 to $4, demand for the coffee decreases, assuming consumer preferences remain unchanged."
+  },
+  {
+    "question_id": "q2",
+    "question": "What is photosynthesis and why is it important?",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Definition accuracy",
+        "weight": 0.5,
+        "description": "Correctly defines photosynthesis process"
+      },
+      {
+        "criterion": "Explanation of importance",
+        "weight": 0.3,
+        "description": "Explains why photosynthesis matters"
+      },
+      {
+        "criterion": "Scientific terminology",
+        "weight": 0.2,
+        "description": "Uses appropriate scientific terms"
+      }
+    ],
+    "answer": "Photosynthesis is the process by which green plants and some organisms convert light energy, usually from the sun, into chemical energy in the form of glucose. It uses carbon dioxide and water as raw materials and produces oxygen as a byproduct. Photosynthesis is crucial because it is the primary source of oxygen in the atmosphere and forms the base of the food chain, providing energy for almost all life on Earth."
+  },
+  {
+    "question_id": "q3",
+    "question": "Explain Newton's First Law of Motion.",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Law statement",
+        "weight": 0.5,
+        "description": "Correctly states the law"
+      },
+      {
+        "criterion": "Real-world example",
+        "weight": 0.3,
+        "description": "Provides practical example"
+      },
+      {
+        "criterion": "Understanding of concepts",
+        "weight": 0.2,
+        "description": "Shows understanding of inertia and force"
+      }
+    ],
+    "answer": "Newton's First Law of Motion, also known as the Law of Inertia, states that an object at rest stays at rest and an object in motion stays in motion with the same speed and direction unless acted upon by an external force. For example, when a car suddenly brakes, passengers continue moving forward due to inertia until the seatbelt applies force to stop them. This law demonstrates that force is required to change an object's state of motion."
+  },
+  {
+    "question_id": "q4",
+    "question": "What is the water cycle and describe its main stages?",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Definition",
+        "weight": 0.3,
+        "description": "Defines water cycle correctly"
+      },
+      {
+        "criterion": "Stages description",
+        "weight": 0.5,
+        "description": "Describes main stages: evaporation, condensation, precipitation, collection"
+      },
+      {
+        "criterion": "Coherence",
+        "weight": 0.2,
+        "description": "Presents stages in logical order"
+      }
+    ],
+    "answer": "The water cycle, also called the hydrologic cycle, is the continuous movement of water on, above, and below the Earth's surface. The main stages are: 1) Evaporation - water from oceans, lakes, and rivers turns into vapor due to heat. 2) Condensation - water vapor cools and forms clouds. 3) Precipitation - water falls back to Earth as rain, snow, or hail. 4) Collection - water collects in bodies of water and the cycle repeats."
+  },
+  {
+    "question_id": "q5",
+    "question": "What is democracy and what are its key features?",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Definition",
+        "weight": 0.4,
+        "description": "Defines democracy accurately"
+      },
+      {
+        "criterion": "Key features",
+        "weight": 0.4,
+        "description": "Mentions key features like voting, equality, freedom"
+      },
+      {
+        "criterion": "Clarity",
+        "weight": 0.2,
+        "description": "Clear and organized answer"
+      }
+    ],
+    "answer": "Democracy is a system of government where power is vested in the people, who exercise it directly or through elected representatives. Key features include: free and fair elections, equality before the law, protection of fundamental rights and freedoms, rule of law, and accountability of the government to the people. In a democracy, citizens have the right to participate in decision-making through voting and expressing their opinions."
+  },
+  {
+    "question_id": "q6",
+    "question": "Explain the difference between weather and climate.",
+    "max_marks": 10,
+    "rubric": [
+      {
+        "criterion": "Weather definition",
+        "weight": 0.3,
+        "description": "Correctly defines weather"
+      },
+      {
+        "criterion": "Climate definition",
+        "weight": 0.3,
+        "description": "Correctly defines climate"
+      },
+      {
+        "criterion": "Comparison and examples",
+        "weight": 0.4,
+        "description": "Clearly distinguishes between them with examples"
+      }
+    ],
+    "answer": "Weather refers to the short-term atmospheric conditions in a specific place at a specific time, including temperature, humidity, precipitation, and wind. For example, today might be sunny and 75 degrees. Climate, on the other hand, refers to the average weather patterns in a region over a long period, typically 30 years or more. For instance, a tropical climate has consistently warm temperatures and high rainfall throughout the year. Weather changes daily, while climate describes long-term trends."
+  }
+]
