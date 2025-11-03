@@ -1,0 +1,9 @@
+To update schema : psql -U sih -d autoevalai -f E:\Hackthons\Autoevalai\Backend\Migration\Migration.sql
+
+Web ui for sql : http://localhost/adminer-5.4.1.php
+
+cd Model
+
+ .\venv\Scripts\activate  
+uvicorn App:app --reload --port 5000                                  
+

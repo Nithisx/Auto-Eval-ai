@@ -1,0 +1,629 @@
+    Signup: http://localhost:4000/api/auth/signup
+    {
+        "email":"summafun251@gmial.com",
+        "password":"1872005",
+        "full_name":"Nithish",
+        "role":"principal"
+    }
+
+    {
+        "message": "User created",
+        "user": {
+            "user_id": "55aec998-f8cb-4257-9000-0fb749c914f0",
+            "email": "summafun251@gmial.com",
+            "full_name": "Nithish",
+            "role": "principal"
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTVhZWM5OTgtZjhjYi00MjU3LTkwMDAtMGZiNzQ5YzkxNGYwIiwicm9sZSI6InByaW5jaXBhbCIsImVtYWlsIjoic3VtbWFmdW4yNTFAZ21pYWwuY29tIiwiaWF0IjoxNzYwNzI0MDg3LCJleHAiOjE3NjA3Mjc2ODd9.j52cnXcMyRyra2iVoXXxvH9dkMRSHUMmLCllGK9KjOI"
+    }
+
+
+
+
+
+    login :http://localhost:4000/api/auth/login
+    {
+        "email":"summafun251@gmial.com",
+        "password":"1872005"
+    }
+    {
+        "message": "Logged in",
+        "user": {
+            "user_id": "55aec998-f8cb-4257-9000-0fb749c914f0",
+            "email": "summafun251@gmial.com",
+            "full_name": "Nithish",
+            "role": "principal"
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNTVhZWM5OTgtZjhjYi00MjU3LTkwMDAtMGZiNzQ5YzkxNGYwIiwicm9sZSI6InByaW5jaXBhbCIsImVtYWlsIjoic3VtbWFmdW4yNTFAZ21pYWwuY29tIiwiaWF0IjoxNzYwNzI0MTE3LCJleHAiOjE3NjA3Mjc3MTd9.bMYAK7jQ8fAydBUuzyfEn2_UDf5hEfeE15dc-MPkGbI"
+    }
+
+
+    create Class :  http://localhost:4000/api/classes
+    {
+    "name": "1st Standard",
+    "grade": 1,
+    "sections": ["A", "B", "C"]
+    }
+    {
+        "class": {
+            "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+            "name": "1st Standard",
+            "grade": 1,
+            "created_at": "2025-10-17T18:31:13.542Z"
+        },
+        "sections": [
+            {
+                "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "A",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            },
+            {
+                "section_id": "a82947ed-f021-4aff-a7ac-b58cfe559927",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "B",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            },
+            {
+                "section_id": "fac2e9aa-6c42-484d-8e5f-b2ddfe95d65f",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "C",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            }
+        ]
+    }
+
+
+    Create Section :http://localhost:4000/api/classes/<CLASS_ID>/sections
+    {"name":"D"}
+    {
+        "section": {
+            "section_id": "f331b38c-1a13-42d0-9b3d-a816dc99b9b8",
+            "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+            "name": "D",
+            "created_at": "2025-10-17T18:34:52.865Z"
+        }
+    }
+
+
+
+
+    To get avaliable class: http://localhost:4000/api/classes
+    {
+        "classes": [
+            {
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "1st Standard",
+                "grade": 1,
+                "created_at": "2025-10-17T18:31:13.542Z",
+                "sections": [
+                    {
+                        "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                        "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                        "name": "A",
+                        "created_at": "2025-10-17T18:31:13.542Z"
+                    },
+                    {
+                        "section_id": "a82947ed-f021-4aff-a7ac-b58cfe559927",
+                        "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                        "name": "B",
+                        "created_at": "2025-10-17T18:31:13.542Z"
+                    },
+                    {
+                        "section_id": "fac2e9aa-6c42-484d-8e5f-b2ddfe95d65f",
+                        "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                        "name": "C",
+                        "created_at": "2025-10-17T18:31:13.542Z"
+                    },
+                    {
+                        "section_id": "f331b38c-1a13-42d0-9b3d-a816dc99b9b8",
+                        "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                        "name": "D",
+                        "created_at": "2025-10-17T18:34:52.865Z"
+                    }
+                ]
+            }
+        ]
+    }
+
+
+
+
+    to get class : http://localhost:4000/api/classes/<CLASS_ID>/sections
+    {
+        "sections": [
+            {
+                "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "A",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            },
+            {
+                "section_id": "a82947ed-f021-4aff-a7ac-b58cfe559927",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "B",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            },
+            {
+                "section_id": "fac2e9aa-6c42-484d-8e5f-b2ddfe95d65f",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "C",
+                "created_at": "2025-10-17T18:31:13.542Z"
+            },
+            {
+                "section_id": "f331b38c-1a13-42d0-9b3d-a816dc99b9b8",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "name": "D",
+                "created_at": "2025-10-17T18:34:52.865Z"
+            }
+        ]
+    }
+
+
+
+
+    to create Single Student: http://localhost:4000/api/sections/<SECTION_ID>/students
+    {
+        "email": "student1@example.com",
+        "password": "StudPass123",
+        "full_name": "Student One",
+        "roll_number": "R001"
+    }
+    {
+        "created": [
+            {
+                "student_id": "934ca76e-929e-4ab9-b68f-d5dddc5371a4",
+                "user_id": "377368f7-7bb3-4475-90ae-b9ecc126ff81",
+                "email": "student1@example.com",
+                "full_name": "Student One",
+                "roll_number": "R001"
+            }
+        ]
+    }
+
+
+
+
+    To create Mulitple Students  : http://localhost:4000/api/sections/<SECTION_ID>/students
+    {
+        "students": [
+        {"email":"s1@example.com","password":"pass1","full_name":"S One","roll_number":"01"},
+        {"email":"s2@example.com","password":"pass2","full_name":"S Two","roll_number":"02"}
+        ]
+    }
+    {
+        "created": [
+            {
+                "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+                "user_id": "ef5d4dd9-6118-45b0-864e-6f3f76b40fde",
+                "email": "s1@example.com",
+                "full_name": "S One",
+                "roll_number": "01"
+            },
+            {
+                "student_id": "98e15c8f-7233-4db1-935c-1553430db0e3",
+                "user_id": "835d32ba-2a11-41de-91d6-d659317ade65",
+                "email": "s2@example.com",
+                "full_name": "S Two",
+                "roll_number": "02"
+            }
+        ]
+    }
+
+
+
+
+    To get a section students:http://localhost:4000/api/sections/<SECTION_ID>/students
+    {
+        "students": [
+            {
+                "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+                "user_id": "ef5d4dd9-6118-45b0-864e-6f3f76b40fde",
+                "roll_number": "01",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                "enrollment_date": "2025-10-17T18:30:00.000Z",
+                "email": "s1@example.com",
+                "full_name": "S One"
+            },
+            {
+                "student_id": "98e15c8f-7233-4db1-935c-1553430db0e3",
+                "user_id": "835d32ba-2a11-41de-91d6-d659317ade65",
+                "roll_number": "02",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                "enrollment_date": "2025-10-17T18:30:00.000Z",
+                "email": "s2@example.com",
+                "full_name": "S Two"
+            },
+            {
+                "student_id": "934ca76e-929e-4ab9-b68f-d5dddc5371a4",
+                "user_id": "377368f7-7bb3-4475-90ae-b9ecc126ff81",
+                "roll_number": "R001",
+                "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                "enrollment_date": "2025-10-17T18:30:00.000Z",
+                "email": "student1@example.com",
+                "full_name": "Student One"
+            }
+        ]
+    }
+
+
+
+    To create Exams: http://localhost:4000/api/sections/<SECTION_ID>/exams
+    {
+    "title": "Midterm March 2025",
+    "description": "Midterm exams covering syllabus till Feb",
+    "start_time": "2025-03-10T09:00:00.000Z",
+    "end_time": "2025-03-10T12:00:00.000Z",
+    "subjects": ["Mathematics", "Science"]
+    }
+
+    {
+        "exam": {
+            "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+            "title": "Midterm March 2025",
+            "description": "Midterm exams covering syllabus till Feb",
+            "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+            "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+            "created_by": "55aec998-f8cb-4257-9000-0fb749c914f0",
+            "start_time": "2025-03-10T09:00:00.000Z",
+            "end_time": "2025-03-10T12:00:00.000Z",
+            "created_at": "2025-10-17T19:32:24.778Z"
+        },
+        "subjects": [
+            {
+                "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+                "name": "Mathematics",
+                "created_at": "2025-10-17T19:32:24.778Z"
+            },
+            {
+                "subject_id": "ad162d56-ef9c-4488-87fe-8ef84dd7350d",
+                "name": "Science",
+                "created_at": "2025-10-17T19:32:24.778Z"
+            }
+        ]
+    }
+
+
+
+
+    Exam with Existing subject: http://localhost:4000/api/sections/<SECTION_ID>/exams
+    {
+    "title": "Quarterly Assessment",
+    "subject_ids": ["<SUBJ_UUID_1>", "<SUBJ_UUID_2>"]
+    }
+
+
+
+    Add a subject to existing exam : http://localhost:4000/api/exams/<EXAM_ID>/subjects
+    {
+    "subjects": ["Social Studies"]
+    }
+
+
+
+    Get exams for a section: http://localhost:4000/api/sections/<SECTION_ID>/exams
+    {
+        "exams": [
+            {
+                "exam": {
+                    "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+                    "title": "Midterm March 2025",
+                    "description": "Midterm exams covering syllabus till Feb",
+                    "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+                    "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+                    "created_by": "55aec998-f8cb-4257-9000-0fb749c914f0",
+                    "start_time": "2025-03-10T09:00:00.000Z",
+                    "end_time": "2025-03-10T12:00:00.000Z",
+                    "created_at": "2025-10-17T19:32:24.778Z"
+                },
+                "subjects": [
+                    {
+                        "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+                        "name": "Mathematics",
+                        "created_at": "2025-10-17T19:32:24.778Z"
+                    },
+                    {
+                        "subject_id": "ad162d56-ef9c-4488-87fe-8ef84dd7350d",
+                        "name": "Science",
+                        "created_at": "2025-10-17T19:32:24.778Z"
+                    }
+                ]
+            }
+        ]
+    }
+
+
+
+
+    Get subjects attached to an exam: http://localhost:4000/api/exams/subjects/<EXAM_ID>
+    {
+        "exam": {
+            "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+            "title": "Midterm March 2025",
+            "description": "Midterm exams covering syllabus till Feb",
+            "class_id": "e5a00961-1591-4a89-b931-d62f0ddad049",
+            "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+            "created_by": "55aec998-f8cb-4257-9000-0fb749c914f0",
+            "start_time": "2025-03-10T09:00:00.000Z",
+            "end_time": "2025-03-10T12:00:00.000Z",
+            "created_at": "2025-10-17T19:32:24.778Z"
+        },
+        "subjects": [
+            {
+                "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+                "name": "Mathematics",
+                "created_at": "2025-10-17T19:32:24.778Z"
+            },
+            {
+                "subject_id": "ad162d56-ef9c-4488-87fe-8ef84dd7350d",
+                "name": "Science",
+                "created_at": "2025-10-17T19:32:24.778Z"
+            }
+        ]
+    }
+
+
+
+
+
+
+
+
+to add answers and lubrics
+7561-43e8-aef5-b5b95c5fd763/exams/d0d95862-a399-4658-9013-691af8b4eb42/subjects/d371674e-7bf5-43b9-ad96-b7133fd8bb8b/teacher-answers
+
+{
+  "exam_id": "d95862-a399-4658-9013-691af8b4eb42",
+  "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+  "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+  "total_marks": 100,
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "Explain the theme of the poem 'Daffodils' by William Wordsworth.",
+      "max_marks": 10,
+      "ideal_answer": "The poem 'Daffodils' reflects the beauty of nature and the deep emotional connection the poet feels towards it. Wordsworth describes the daffodils as a source of joy and inspiration, emphasizing the theme of nature's healing and spiritual power.",
+      "rubrics": "Rubrics:\n- Focus on the poem's main theme and interpretation – 4 marks\n- Logical structure and flow – 2 marks\n- Grammar and clarity – 2 marks\n- Original thought or deeper insight – 2 marks"
+    },
+    {
+      "question_number": 2,
+      "question_text": "Define Artificial Intelligence and mention two real-world applications.",
+      "max_marks": 5,
+      "ideal_answer": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. Two real-world applications include voice assistants like Alexa and predictive algorithms used in healthcare.",
+      "rubrics": "Rubrics:\n- Correct definition of Artificial Intelligence – 2 marks\n- Two valid and relevant real-world examples – 2 marks\n- Clarity and simplicity of explanation – 1 mark"
+    },
+    {
+      "question_number": 3,
+      "question_text": "List and explain any three types of machine learning algorithms.",
+      "max_marks": 10,
+      "ideal_answer": "Three main types of machine learning algorithms are supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data, and reinforcement learning learns by trial and error using rewards.",
+      "rubrics": "Rubrics:\n- Coverage of all three ML types with brief explanation – 5 marks\n- Depth of understanding in each type – 3 marks\n- Organization and readability – 2 marks"
+    }
+  ]
+}
+
+
+{
+    "message": "Teacher answers saved successfully",
+    "teacher_answer": {
+        "teacher_answer_id": "88b3ce5c-10fa-406c-ae14-4515f9b1ee70",
+        "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+        "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+        "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+        "uploader_id": "55aec998-f8cb-4257-9000-0fb749c914f0",
+        "total_marks": 100,
+        "answers": {
+            "exam_id": "d95862-a399-4658-9013-691af8b4eb42",
+            "questions": [
+                {
+                    "rubrics": "Rubrics:\n- Focus on the poem's main theme and interpretation – 4 marks\n- Logical structure and flow – 2 marks\n- Grammar and clarity – 2 marks\n- Original thought or deeper insight – 2 marks",
+                    "max_marks": 10,
+                    "ideal_answer": "The poem 'Daffodils' reflects the beauty of nature and the deep emotional connection the poet feels towards it. Wordsworth describes the daffodils as a source of joy and inspiration, emphasizing the theme of nature's healing and spiritual power.",
+                    "question_text": "Explain the theme of the poem 'Daffodils' by William Wordsworth.",
+                    "question_number": 1
+                },
+                {
+                    "rubrics": "Rubrics:\n- Correct definition of Artificial Intelligence – 2 marks\n- Two valid and relevant real-world examples – 2 marks\n- Clarity and simplicity of explanation – 1 mark",
+                    "max_marks": 5,
+                    "ideal_answer": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. Two real-world applications include voice assistants like Alexa and predictive algorithms used in healthcare.",
+                    "question_text": "Define Artificial Intelligence and mention two real-world applications.",
+                    "question_number": 2
+                },
+                {
+                    "rubrics": "Rubrics:\n- Coverage of all three ML types with brief explanation – 5 marks\n- Depth of understanding in each type – 3 marks\n- Organization and readability – 2 marks",
+                    "max_marks": 10,
+                    "ideal_answer": "Three main types of machine learning algorithms are supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data, and reinforcement learning learns by trial and error using rewards.",
+                    "question_text": "List and explain any three types of machine learning algorithms.",
+                    "question_number": 3
+                }
+            ],
+            "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+            "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+            "total_marks": 100
+        },
+        "created_at": "2025-10-22T17:50:16.685Z"
+    }
+}
+
+
+
+to upload answers for an student http://localhost:4000/api/studentanswers/sections/11b4859a-7561-43e8-aef5-b5b95c5fd763/exams/d0d95862-a399-4658-9013-691af8b4eb42/subjects/d371674e-7bf5-43b9-ad96-b7133fd8bb8b/students/192917d4-a580-4823-a252-53f429a92ae0/answers
+
+{
+  "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+  "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+  "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+  "answers": [
+    {
+      "question_number": 1,
+      "answer_text": "The poem 'Daffodils' explores the beauty and tranquility of nature. Wordsworth expresses how the sight of daffodils uplifts his spirits and becomes a lasting source of happiness and peace in his memory."
+    },
+    {
+      "question_number": 2,
+      "answer_text": "Artificial Intelligence refers to the ability of machines to perform tasks that typically require human intelligence. Examples include Siri on iPhones and AI systems used for medical diagnostics."
+    },
+    {
+      "question_number": 3,
+      "answer_text": "Three types of machine learning algorithms are: Supervised learning, where the algorithm learns from labeled data; Unsupervised learning, where it identifies patterns in data without labels; and Reinforcement learning, where it learns through feedback from actions taken."
+    }
+  ]
+}
+
+
+{
+    "message": "Student answers saved successfully",
+    "student_answer": {
+        "student_answer_id": "01047d55-5b61-48d2-906b-983cb40b4644",
+        "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+        "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+        "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+        "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+        "answers": [
+            {
+                "answer_text": "The poem 'Daffodils' explores the beauty and tranquility of nature. Wordsworth expresses how the sight of daffodils uplifts his spirits and becomes a lasting source of happiness and peace in his memory.",
+                "question_number": 1
+            },
+            {
+                "answer_text": "Artificial Intelligence refers to the ability of machines to perform tasks that typically require human intelligence. Examples include Siri on iPhones and AI systems used for medical diagnostics.",
+                "question_number": 2
+            },
+            {
+                "answer_text": "Three types of machine learning algorithms are: Supervised learning, where the algorithm learns from labeled data; Unsupervised learning, where it identifies patterns in data without labels; and Reinforcement learning, where it learns through feedback from actions taken.",
+                "question_number": 3
+            }
+        ],
+        "created_at": "2025-10-22T19:29:50.192Z",
+        "submitted_by": "55aec998-f8cb-4257-9000-0fb749c914f0"
+    }
+}
+
+
+List student answers for an exam/section/subject/student
+"/api/student_answer/sections/:sectionId/exams/:examId/subjects/:subjectId/students/:studentId/answers
+
+Get single student answer by id
+/api/student-answers/:id
+
+
+ View Single Student Result
+GET /api/results/sections/:sectionId/exams/:examId/subjects/:subjectId/students/:studentId
+{
+    "result": {
+        "result_id": "52e83a11-ff51-4d41-8b01-a903f7355ce1",
+        "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+        "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+        "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+        "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+        "evaluated_by": "55aec998-f8cb-4257-9000-0fb749c914f0",
+        "questions": [
+            {
+                "rubrics": "Rubrics:\n- Focus on the poem's main theme and interpretation – 4 marks\n- Logical structure and flow – 2 marks\n- Grammar and clarity – 2 marks\n- Original thought or deeper insight – 2 marks",
+                "feedback": "The student's answer correctly identifies the main theme of the poem, which is the beauty and emotional connection to nature. However, it could have been more comprehensive by elaborating on how this theme relates to the spiritual power and healing qualities that Wordsworth experiences (as per the Ideal Answer). The structure and flow are logical, but the answer lacks original thought or deeper insight beyond the basic interpretation of the poem's theme. The grammar and clarity are good.",
+                "max_marks": 10,
+                "ideal_answer": "The poem 'Daffodils' reflects the beauty of nature and the deep emotional connection the poet feels towards it. Wordsworth describes the daffodils as a source of joy and inspiration, emphasizing the theme of nature's healing and spiritual power.",
+                "awarded_marks": 8,
+                "question_text": "Explain the theme of the poem 'Daffodils' by William Wordsworth.",
+                "student_answer": "The poem 'Daffodils' explores the beauty and tranquility of nature. Wordsworth expresses how the sight of daffodils uplifts his spirits and becomes a lasting source of happiness and peace in his memory.",
+                "question_number": 1
+            },
+            {
+                "rubrics": "Rubrics:\n- Correct definition of Artificial Intelligence – 2 marks\n- Two valid and relevant real-world examples – 2 marks\n- Clarity and simplicity of explanation – 1 mark",
+                "feedback": "The student's answer is mostly correct. They have provided a definition of Artificial Intelligence that is similar to the ideal answer, but it could be more precise by explicitly stating that AI systems mimic human intelligence processes. Additionally, they have given two valid real-world examples: voice assistants and medical diagnostics. However, the explanation lacks clarity and simplicity as the student repeats \"AI systems\" in their second example without specifying which ones are being referred to. To earn the full marks, the student could revise their answer by providing a more accurate definition and ensuring that all examples are clearly explained.",
+                "max_marks": 5,
+                "ideal_answer": "Artificial Intelligence is the simulation of human intelligence processes by machines, especially computer systems. Two real-world applications include voice assistants like Alexa and predictive algorithms used in healthcare.",
+                "awarded_marks": 4,
+                "question_text": "Define Artificial Intelligence and mention two real-world applications.",
+                "student_answer": "Artificial Intelligence refers to the ability of machines to perform tasks that typically require human intelligence. Examples include Siri on iPhones and AI systems used for medical diagnostics.",
+                "question_number": 2
+            },
+            {
+                "rubrics": "Rubrics:\n- Coverage of all three ML types with brief explanation – 5 marks\n- Depth of understanding in each type – 3 marks\n- Organization and readability – 2 marks",
+                "feedback": "The student's answer correctly lists and explains three types of machine learning algorithms: supervised learning, unsupervised learning, and reinforcement learning. The explanation for each type is brief but sufficient according to the rubrics. However, a deeper understanding of each type could have been demonstrated with more detailed explanations or examples.\n\nThe organization and readability of the answer is clear and easy to follow. Overall, the student has provided a satisfactory response that meets the requirements of the question.",
+                "max_marks": 10,
+                "ideal_answer": "Three main types of machine learning algorithms are supervised learning, unsupervised learning, and reinforcement learning. Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data, and reinforcement learning learns by trial and error using rewards.",
+                "awarded_marks": 9,
+                "question_text": "List and explain any three types of machine learning algorithms.",
+                "student_answer": "Three types of machine learning algorithms are: Supervised learning, where the algorithm learns from labeled data; Unsupervised learning, where it identifies patterns in data without labels; and Reinforcement learning, where it learns through feedback from actions taken.",
+                "question_number": 3
+            }
+        ],
+        "total_marks": "21.00",
+        "max_total_marks": "100.00",
+        "created_at": "2025-10-23T16:37:10.351Z",
+        "updated_at": "2025-10-23T16:37:10.351Z",
+        "student_name": "S One",
+        "student_email": "s1@example.com",
+        "roll_number": "01",
+        "subject_name": "Mathematics",
+        "exam_title": "Midterm March 2025"
+    }
+}
+
+View All Section Results (Class-wide)
+http://localhost:4000/api/results/sections/:sectionId/exams/:examId/subjects/:subjectId
+
+Statistics
+GET /api/results/sections/:sectionId/exams/:examId/subjects/:subjectId/statistics
+
+
+Student History
+GET /api/results/student/:studentId
+
+
+
+to upload answer sheet to every student 
+curl -X POST http://localhost:4000/api/studentimageanswers \
+  -H "Authorization: Bearer <token>" \
+  -F "exam_id=d0d95862-a399-4658-9013-691af8b4eb42" \
+  -F "section_id=11b4859a-7561-43e8-aef5-b5b95c5fd763" \
+  -F "subject_id=d371674e-7bf5-43b9-ad96-b7133fd8bb8b" \
+  -F "student_id=192917d4-a580-4823-a252-53f429a92ae0" \
+  -F "images=@/path/to/answer1.jpg" \
+  -F "images=@/path/to/answer2.jpg"
+
+{
+    "message": "Image answers stored",
+    "answer": {
+        "image_answer_id": "34305549-ee2f-442c-a4ab-d3bc30be660e",
+        "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+        "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+        "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+        "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+        "image_urls": [
+            "/uploads/answers/1761240467066-Homepage.jpg"
+        ],
+        "created_at": "2025-10-23T17:27:47.201Z"
+    }
+}
+
+
+
+Get All Image Answers for a Student (in an exam/section/subject)
+
+http://localhost:4000/api/studentimageanswers/:examId/:sectionId/:subjectId/:studentId
+
+{
+    "answers": [
+        {
+            "image_answer_id": "34305549-ee2f-442c-a4ab-d3bc30be660e",
+            "exam_id": "d0d95862-a399-4658-9013-691af8b4eb42",
+            "section_id": "11b4859a-7561-43e8-aef5-b5b95c5fd763",
+            "subject_id": "d371674e-7bf5-43b9-ad96-b7133fd8bb8b",
+            "student_id": "192917d4-a580-4823-a252-53f429a92ae0",
+            "image_urls": [
+                "/uploads/answers/1761240467066-Homepage.jpg"
+            ],
+            "created_at": "2025-10-23T17:27:47.201Z"
+        }
+    ]
+}
+
+
+Get All Image Answers for an Exam/Section/Subject
+http://localhost:4000/api/studentimageanswers/:examId/:sectionId/:subjectId
+
+
+
